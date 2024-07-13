@@ -1,0 +1,10 @@
+services:
+  python-namespace:
+    container_name : "python-namespace"
+    hostname: 'python-namespace'
+    build: 
+      context: ./python-namespace
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./python-namespace:/code/
